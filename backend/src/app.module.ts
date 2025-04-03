@@ -1,5 +1,6 @@
 import { Module } from "@nestjs/common";
 import { UserModule } from "./user/user.module";
+import { DscAppMenuModule } from "./dscAppMenu/dscAppMenu.module";
 import { HealthModule } from "./health/health.module";
 import { PrismaModule } from "./prisma/prisma.module";
 import { SecretsManagerModule } from "./providers/secrets/secretsManager.module";
@@ -21,6 +22,7 @@ import { AuthModule } from "./auth/auth.module";
     StorageModule,
     LoggerModule,
     UserModule,
+    DscAppMenuModule,
     HealthModule,
     PrismaModule,
     SecretsManagerModule,
